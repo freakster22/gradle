@@ -19,7 +19,7 @@ public class SpringMain {
 		//Creating the object of Spring IOC Container
 		ApplicationContext context = new ClassPathXmlApplicationContext("greetings.xml");
 		
-		Greeting greeting1 = context.getBean("festival",Greeting.class);
+		Greeting greeting1 = context.getBean("Aniversary",Greeting.class);
 		System.out.println(greeting1.greet());
 		
 		Greeting greeting2 = context.getBean("Aniversary",Greeting.class);

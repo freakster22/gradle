@@ -7,7 +7,7 @@
 </bean>
 
 
-<bean id="Aniversary" class="com.zensar.spring.AniversaryGreeting">
+<bean id="Aniversary" class="com.zensar.spring.AniversaryGreeting" scope="prototype">
 </bean>
 
 
