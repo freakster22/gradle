@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd ">
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd ">
 
-<bean id="pyare Mohan" class="com.zensar.spring.performers.Juggler">
-<constructor-arg value="10"></constructor-arg>
+	<bean id="pyare Mohan"
+		class="com.zensar.spring.performers.Juggler">
+		<constructor-arg value="10"></constructor-arg>
 
-</bean>
+	</bean>
 
-
-
+	<bean id="twinkle" class="com.zensar.spring.poems.TwinkleTwinkle">
+	</bean>
+	<bean id="something"
+		class="com.zensar.spring.performers.PoeticJuggler">
+		<constructor-arg value="22"></constructor-arg>
+		<constructor-arg ref="twinkle"></constructor-arg>
+	</bean>
 
 </beans>
