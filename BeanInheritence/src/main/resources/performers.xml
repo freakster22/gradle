@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd ">
+
+	<bean id="guitar" class="com.zensar.spring.instruments.Guitar">
+	</bean>
+
+	<bean id="slash"
+		class="com.zensar.spring.performers.Instrumentalist">
+		<property name="instrument" ref="guitar"></property>
+		<property name="song" value="Stairway to Heaven"></property>
+	</bean>
+	<bean id="childBean" parent="slash">
+		<property name="song" value="Fireflies"></property>
+	</bean>
+	<bean id="drums" class="com.zensar.spring.instruments.Drums">
+
+	</bean>
+	<bean id="childChildBean" parent="childBean">
+	<property name="instrument" ref="drums"></property>
+		<property name="song" value="Fireflies"></property>
+	</bean>
+</beans>
