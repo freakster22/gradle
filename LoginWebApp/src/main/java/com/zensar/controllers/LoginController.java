@@ -22,7 +22,7 @@ public class LoginController {
 	@Autowired
 	private UserService userService;
 	@RequestMapping("login")
-	@GetMapping
+	@PostMapping
 	public String checkLogin(User user, ModelMap map) {
 		if (userService.validateUser(user)){
 			map.addAttribute("userNm",user.getUsername());//key value data to store

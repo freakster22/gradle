@@ -9,7 +9,7 @@
 </head>
 <body style="background-color:black">
 $useNm
-<form action="login" method="get">
+<form action="login" method="post">
     <div class="container" style="color:white">Username: 
       <input type="text" placeholder="Enter Username" name="username" required>
 <br>Password:
